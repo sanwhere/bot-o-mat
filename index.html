@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="This is a Remote Robot Control Panel interview project by Sanwhere.">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <title>Robot Task Remote Control Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card row">
+            <div class="card-header">
+                <h5>Robot Task Remote Control</h5>
+            </div>
+
+            <div class="card-body">
+                <form id="robot-form" name="form">
+                    <div class="form-row">
+                        <input class="form-control" type="text" name="title" id="title" placeholder="Write a Robot Name">
+
+                        <select class="form-control" id="robotype">
+                            <option src="images/robo1.png" value="UNIPEDAL">Unipedal</option>
+                            <option src="images/robo2.png" value="BIPEDAL">Bipedal</option>
+                            <option src="images/robo3.png" value="QUADRUPEDAL">Quadrupedal</option>
+                            <option src="images/robo4.png" value="ARACHNID">Arachnid</option>
+                            <option src="images/robo5.png" value="RADIAL">Radial</option>
+                            <option src="images/robo6.png" value="AERONAUTICAL">Aeronautical</option>
+                        </select>
+
+                        <div class="images" data-selected="UNIPEDAL">
+                            <img src="images/robo1.png" data-image="UNIPEDAL" alt="Unipedal" title="Unipedal" />
+                            <img src="images/robo2.png" data-image="BIPEDAL" alt="Bipedal" title="Bipedal" />
+                            <img src="images/robo3.png" data-image="QUADRUPEDAL" alt="Quadrupedal" title="Quadrupedal" />
+                            <img src="images/robo4.png" data-image="ARACHNID" alt="Arachnid" title="Arachnid" />
+                            <img src="images/robo5.png" data-image="RADIAL" alt="Radial" title="Radial" />
+                            <img src="images/robo6.png" data-image="AERONAUTICAL" alt="Aeronautical" title="Aeronautical" />
+                        </div>
+
+                        <button type="submit" class="btn btn-info">Create Robot</button>
+                    </div>
+                </form>
+                <hr>
+            </div>
+
+            <div class="card-body">
+                <h5 class="card-title" id="robots-title">Tasks</h5>
+                <h7>Drag & Drop the tasks on to the Robot's Images</h7>
+                <div id="tasks"></div>
+                <hr>
+            </div>
+
+            <div class="card-body robot-container">
+                <h5 class="card-title" id="robots-title">Robots</h5>
+                <hr>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Portrait</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="robots">
+                    </tbody>
+                </table>
+                <hr>
+                <a id="clear-robots" class="btn btn-danger" href="#">Delete All Robots</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/robot.js"></script>
+    <script src="js/project.js"></script> 
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+.images {
+	width: 128px;
+	height: 128px;
+	border-radius: 3px 3px 3px 3px;
+	overflow: hidden;
+	position: absolute;
+	right: 20px;
+	top: 75px;
+}
+.col-md-6 {
+	display: contents !important;
+}
+.delete-robot-row div {
+	color: #007bff;
+}
+.images img, .images .loader, .images .no-selection {
+	display: none;}.images[data-selected="UNIPEDAL"] img[data-image="UNIPEDAL"] {
+	display: block;}.images[data-selected="BIPEDAL"] img[data-image="BIPEDAL"] {
+	display: block;}.images[data-selected="QUADRUPEDAL"] img[data-image="QUADRUPEDAL"] {
+	display: block;}.images[data-selected="ARACHNID"] img[data-image="ARACHNID"] {
+	display: block;}.images[data-selected="RADIAL"] img[data-image="RADIAL"] {
+	display: block;}.images[data-selected="AERONAUTICAL"] img[data-image="AERONAUTICAL"] {
+	display: block;
+}
+.form-row {
+	width: 50%;
+}
+.form-row button {
+	width: 100%;
+}
+.form-control {
+	margin-bottom: 10px;
+}
+.container {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	margin-top: 20px;
+	width: 500px !important;
+}
+td img {
+	width: 35px;
+}
+@keyframes shadow-pulse {
+	0% {
+		box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.7);
+	}
+	100% {
+		box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+	}
+}
+#roboImg {
+	animation: none;
+}
+.btn-info {
+	color: #fff;
+	background-color: #1e4258;
+	border-color: #1e4258;
+}
+.table-striped {
+	text-align: center;
+}
+/*
+  #bubble {
+	position: absolute;
+	background: #FFF;
+	border-radius: .4em;
+	display: none;
+	width: 60px;
+	height: 50px;
+	border: 5px solid #00aabb;
+	display: none;
+	margin-top: -93px;
+	margin-left: 41px;
+  }
+  
+  #bubble:after {
+	  content: '';
+	  position: absolute;
+	  bottom: 0;
+	  left: 50%;
+	  width: 0;
+	  height: 0;
+	  border: 20px solid transparent;
+	  border-top-color: #00aabb;
+	  border-bottom: 0;
+	  border-left: 0;
+	  margin-left: -15px;
+	  margin-bottom: -20px;
+  }
+  */
+
+.alert {
+	margin-bottom: 5px !important;	
+}
+@keyframes fadeout {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0.3;
+	}
+}
+
+#countdown {
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+#countdown-number {
+  color: black;
+  display: inline-block;
+  line-height: 40px;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+svg circle {
+  stroke-dasharray: 113px;
+  stroke-dashoffset: 0px;
+  stroke-linecap: round;
+  stroke-width: 2px;
+  stroke: black;
+  fill: none;
+}
+
+@keyframes countdown {
+  from {
+    stroke-dashoffset: 0px;
+  }
+  to {
+    stroke-dashoffset: 113px;
+  }
+}
